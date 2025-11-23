@@ -4,22 +4,33 @@
 }
 
 header {
-    width: 100%;  
-    height: 150px;  
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid red;
-    background-image: linear-gradient(to bottom, red, white, white, red);
+    background-image: linear-gradient(to bottom, #b30000 0%, #ffffff 35%, #ffffff 65%, #b30000 100%);
 }
 
 header picture {
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
 }
 
 header picture img {
-    height: 140px;    
-}  
+    max-height: 120px;
+    height: auto;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+}
 
 nav {
     width: 100%;
@@ -54,15 +65,64 @@ footer {
 }
 
 article {
-    margin: auto;
-    width: 1000px;
-    height: 1200px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 1000px; /* limite de largura em telas grandes */
+    height: auto;
+    min-height: 300px;
     border: 1px solid red;
     padding: 20px;
-} 
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.95);
+}
+
+/* garante que imagens dentro do article fiquem responsivas */
+article img,
+article picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+article picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+}
 
 article picture img {
-    height: 300px; 
+    height: 200px; 
     display: inline-block; 
     padding: 30px;
+}
+
+/* adaptações para telas médias */
+@media (max-width: 800px) {
+    header { min-height: 64px; padding: 8px 0; }
+    header picture img { max-height: 90px; }
+    nav a { font-size: 16px; margin: 0 10px; }
+    article {
+        padding: 16px;
+        margin: 16px;
+        max-width: 90%;
+    }
+}
+
+/* adaptações para telas pequenas / celulares */
+@media (max-width: 420px) {
+    header { min-height: 56px; padding: 6px 6px; }
+    header picture img { max-height: 56px; }
+    nav { flex-wrap: wrap; gap: 6px; padding: 6px 8px; }
+    nav a { font-size: 14px; margin: 6px 8px; }
+    article {
+        padding: 12px;
+        margin: 10px;
+        border-width: 1px;
+        min-height: initial;
+    }
+    article h1 { font-size: 1.4rem; text-align: center; }
+    article h2 { font-size: 1.05rem; text-align: center; }
 }
