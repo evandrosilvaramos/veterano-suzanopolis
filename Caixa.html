@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterâno Suzanópolis</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<style>
+  /* estilos básicos para a planilha financeira */
+  .table-wrap {
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  table.fin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    min-width: 600px;
+  }
+  table.fin-table caption {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  table.fin-table th,
+  table.fin-table td {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ddd;
+    text-align: right;
+  }
+  table.fin-table th {
+    background: #f4f4f4;
+    text-align: left;
+  }
+  table.fin-table td.month {
+    text-align: left;
+  }
+  table.fin-table tr.total {
+    font-weight: 700;
+    background: #fafafa;
+  }
+  @media (max-width: 700px) {
+    table.fin-table th, table.fin-table td { padding: 0.4rem; }
+  }
+
+  /* estilos para imagem responsiva relacionada ao controle financeiro */
+  .image-wrap { margin-top: 1.5rem; display: block; }
+  .responsive-figure { max-width: 900px; margin: 0.75rem auto 2rem; text-align: center; }
+  .responsive-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  article h1 {
+    text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        font-size: 36px;
+        color: #333;
+    }
+
+    article h2 {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        font-size: 28px;
+        color: #555;
+    }
+
+    article p {
+        font-size: 18px;
+        color: #666;
+        margin: 10px 0;
+        margin-bottom: 50px;
+    }
+
+    section p {
+        display: inline;
+    }
+
+    caption {
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+
+</style>
+<body>
+    <header>
+        <picture><a href="index.html"><img src="imagens/SuzanopolisFC.png" alt="Suzanópolis Futebol Clube"></a></picture>
+    </header>
+    <nav>
+        <a href="Jogos.html">Jogos</a>
+        <a href="Elenco.html">Elenco</a>
+        <a href="Mensalidade.html">Mensalidade</a>
+        <a href="Caixa.html">Caixa</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Caixa do Suzanópolis Futebol Clube</h1>
+            <h2>Informações Financeiras:</h2>
+            <p>Aqui você encontrará informações detalhadas sobre o caixa do Suzanópolis Futebol Clube, incluindo receitas, despesas e balanços financeiros.</p>
+
+            <section class="table-wrap" aria-labelledby="planilha-financeira">
+              <table class="fin-table" role="table" aria-describedby="planilha-financeira">
+                <caption id="planilha-financeira">Planilha: Receitas, Despesas e Saldo</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Mês</th>
+                    <th scope="col">Receitas (R$)</th>
+                    <th scope="col">Despesas (R$)</th>
+                    <th scope="col">Saldo (R$)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="month">Janeiro</td>
+                    <td>11.000,00</td>
+                    <td>8.500,00</td>
+                    <td>3.500,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Fevereiro</td>
+                    <td>9.300,00</td>
+                    <td>7.200,00</td>
+                    <td>2.100,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Março</td>
+                    <td>15.750,00</td>
+                    <td>10.400,00</td>
+                    <td>5.350,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Abril</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Maio</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Junho</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Julho</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Agosto</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Setembro</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Outubro</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Novembro</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                  <tr>
+                    <td class="month">Desembro</td>
+                    <td>11.200,00</td>
+                    <td>9.000,00</td>
+                    <td>2.200,00</td>
+                  </tr>
+                                  </tbody>
+                <tfoot>
+                  <tr class="total">
+                    <td scope="row">Total</td>
+                    <td>48.250,00</td>
+                    <td>35.100,00</td>
+                    <td>13.150,00</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </section>                       
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 Veterâno Suzanópolis. todos os direitos reservados.</p>
+    </footer>    
+</body>
+</html>
