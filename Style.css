@@ -65,7 +65,7 @@ footer {
 }
 
 article {
-    margin: 20px auto;
+    margin: 0px auto;
     width: 100%;
     max-width: 1000px; /* limite de largura em telas grandes */
     height: auto;
