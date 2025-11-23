@@ -97,7 +97,7 @@ article picture {
     justify-content: center;
     width: 90%;
     max-width: 1200px;
-    padding: 0 16px;
+    padding: 0 22px;
 }
 
 article picture img {
@@ -112,8 +112,7 @@ article picture img {
     header picture img { max-height: 90px; }
     nav a { font-size: 16px; margin: 0 10px; }
     article {
-        padding: 16px;
-        margin: 16px;
+        margin: 1px auto;
         max-width: 90%;
     }
 }
